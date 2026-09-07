@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            background-color: #f7f9fc;
+            padding: 30px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            text-align: left;
+            border: 2px solid #e6eaf0;
+            box-shadow: 5px 5px 15px #e1e5eb;
+            box-sizing: border-box;
+            width: 450px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #718096;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #dfe3e8;
+            box-sizing: border-box;
+            background-color: #fafbfc;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 10px 25px;
+            background-color: #d5eeee;
+            color: #555555;
+            border: 1px solid #dfe3e8;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Website Feedback</h2>
+
+        <label>Name:</label>
+        <input type="text">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Rating:</label>
+        <input type="radio" name="rating"> Excellent
+        <input type="radio" name="rating"> Good
+        <input type="radio" name="rating"> Average
+
+        <br><br>
+
+        <label>Comments:</label><br>
+        <textarea rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

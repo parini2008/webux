@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            background-color: #f7f9fc;
+            padding: 30px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            text-align: left;
+            border: 2px solid #e6eaf0;
+            box-shadow: 5px 5px 15px #e1e5eb;
+            box-sizing: border-box;
+            width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #718096;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #667085;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #dfe3e8;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            background-color: #fafbfc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            color: white;
+            border: 1px solid #dfe3e8;
+        }
+
+        input[type="submit"] {
+            background-color: #b8d8d8;
+        }
+
+        input[type="reset"] {
+            background-color: #e8b4b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Student Registration Form</h2>
+
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Phone:</label>
+        <input type="tel" name="phone">
+
+        <label>Course:</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>B.Sc</option>
+            <option>B.Tech</option>
+        </select>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
