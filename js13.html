@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            color: rgb(202, 86, 32);
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM Manipulation</h1>
+
+    <p id="message">Hello All!</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="addContent()">Add Content</button>
+    <button onclick="increaseSize()">Increase Size</button>
+    <button onclick="decreaseSize()">Decrease Size</button>
+
+    <script>
+
+        function changeText() {
+            document.getElementById("message").innerHTML =
+                "Welcome to Life!";
+        }
+
+        function changeColor() {
+            document.getElementById("message").style.color = "purple";
+        }
+        function addContent() {
+            document.getElementById("message").innerHTML +=
+                "<br>Tadaaa!";
+        }
+         function increaseSize() {
+            let message = document.getElementById("message");
+            let size = parseInt(window.getComputedStyle(message).fontSize);
+
+            if (size < 48) {
+                message.style.fontSize = (size + 2) + "px";
+            }
+        }
+
+        function decreaseSize() {
+            let message = document.getElementById("message");
+            let size = parseInt(window.getComputedStyle(message).fontSize);
+
+            if (size > 12) {
+                message.style.fontSize = (size - 2) + "px";
+            }
+        }
+
+      
+    </script>
+
+</body>
+</html>
